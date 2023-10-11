@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1500px;
+  width: 100%;
+}
+.span{
+  background-image: url('/images/webtechlogo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  width: 100%;
+  background-color: #111111;
+  color: rgb(255, 255, 255);
+}
+.span-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 95vh;
+  background-color: rgba(0, 0, 0, 0.856);
+}
+.span img{
+  width: 600px;
+}
+.span-content{
+  width: 500px;
+  margin-left: .5rem;
+}
+.span-content h1{
+  font-size: 50px;
+}
+.span-content p{
+  font-size: 30px;
+}
+.button-span{
+  padding: 20px 20px;
+  margin-top: 2rem;
+  background-color: darkorange;
+  border-radius: 20px;
+  color: #111111;
+  text-decoration: none;
+  margin-left: .5rem;
+}
+@media screen and (max-width: 500px){
+  .span-content h1{
+    font-size: 30px;
+  }
+  .span-content p{
+    font-size: 20px;
+  }
+}
