@@ -17,6 +17,11 @@
   overflow: hidden;
   border-radius: 25px;
 }
+.portfolio-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
 .card{
   border-radius: 25px;
   background-color: darkorange;
