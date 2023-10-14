@@ -117,3 +117,35 @@ const adjustmentForm = document.getElementById('adForm')
     })
 })
 //portfolioform//
+
+//webdevform//
+
+const cyberForm = document.getElementById('cyberForm')
+console.log(cyberForm);
+ cyberForm.addEventListener('submit', (e) =>{
+    e.preventDefault();
+    let cyberEmail = document.getElementById('cyberEmail')
+    let cyberService = document.getElementById('cyberService')
+    let cyberbtn = document.querySelector('.cyberbtn')
+    let cyberh3 = document.querySelector('.cyberh3')
+    const formData = {
+        Email: cyberEmail.value,
+        Service: cyberService.value
+    }
+    console.log(formData);
+
+    fetch("https://formsubmit.co/ajax/briannjosh23@gmail.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify(formData)
+})
+    .then(action => {
+        cyberEmail.value = ''
+        cyberbtn.style.display = 'none'
+        cyberh3.style.display = 'block'
+    })
+})
+//portfolioform//
