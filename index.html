@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web-Tech kenya</title>
 
@@ -9,12 +10,19 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Swiper CSS -->
+     <link rel="stylesheet" href="/Responsive Card Slider/css/swiper-bundle.min.css">
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="/Responsive Card Slider/css/style.css">
     <!-- css files -->
     <!-- js -->
     <script defer src="/js/nav.js"></script>
+    <script defer src="/main.js"></script>
     <!-- js -->
 </head>
 <body>
+  <main>
    <header>
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Web Tech</a>
@@ -48,5 +56,271 @@
             <!-- <img src="/images/webtechlogo.png" alt=""> -->
         </div>
    </section>
+   <!-- end of header -->
+
+   <!-- main -->
+   <section class="about">
+    <div class="about-wrapper">
+        <h2 style="padding-left: .5rem;"> <span style="border-bottom: 5px solid darkorange;">About</span> Us</h2>
+        <div class="details">
+          <div class="inffo">
+            <p>Welcome to WebTech, your trusted partner for professional web development services. We specialize in creating custom websites that meet your unique needs and exceed your expectations.</p>
+            <p>We understand that in today's digital landscape, having a strong online presence is paramount. That's why we're here to provide you with the finest in web development services, custom-tailored to meet your specific needs and objectives.</p>
+            <p>Join us as we delve into the ever-evolving world of web development, sharing insights, tips, and best practices to keep you at the forefront of this dynamic industry. From responsive design and e-commerce solutions to SEO strategies and content management, we've got you covered.
+            </p>
+            <p>
+              <form id="newsLetter">
+                <label for="email"><strong>subscribe for our news letter</strong></label><br>
+                <input type="email" name="E-mail" id="subscribe" placeholder="Provide your email">
+
+                <input type="hidden" name="Service" id="subscribeNews" value="Newsletter">
+
+                <input type="hidden" name="_template" id="template" value="table">
+
+                <input type="submit" id="subscribebtn" class="button" value="Subscribe" style="background-color: #111;">
+              </form>
+              
+            </p>
+          </div>
+          <!-- <div>
+           <img src="/images/Picsart_23-10-13_10-18-23-226.png" alt="">
+          </div> -->
+        </div>
+    </div>
+   </section>
+  </main>
+   <!-- slide -->
+   <div class="slider-wrapper">
+    <div class="slide-container swiper">
+      <div class="services" id="services" style="width: 100%; padding-left: .5rem; background-color: #EFEFEF; padding-bottom: 1rem;">
+        <h2><span style="border-bottom: 5px solid darkorange;">Our serv</span>ices</h2>
+      </div>
+      <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                          <img src="https://www.shutterstock.com/image-photo/text-portfolio-on-brown-paper-260nw-387456811.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Portfolio Development</h2>
+                      <br>
+                      <p class="description">At Web Tech, we understand that your online presence is not just about having a website; it's about making a statement and showcasing your unique identity to the world. That's why we're proud to offer our Portfolio Development as a Service (PDaaS)</p>
+                  </div>
+                  <div style="text-align: center; display: flex; flex-direction: column;">
+                    <h4 style="text-decoration: line-through;">From Ksh 8,000</h4>
+                    <h4>Ksh 5,000</h4>
+                    <form id="portfolioForm">
+                      <input type="email" name="Email" id="porfolioEmail"  placeholder="Enter email to book this service" required><br>
+                      <input type="hidden" name="Service" id="portfolioService" value="Portfolio Development">
+                      <input type="hidden" name="_template" value="table">
+                      <button class="button portfoliobtn" type="submit">Get Service</button>
+                    </form>
+                    
+                    <h4 class="portfolioh3" style="color: rgb(2, 121, 2); display: none; padding-top: 1rem;">Request sent webtech will respond to you via E-mail provided!!!!</h4>
+                    <br>
+                    <i>Swipe left for more</i>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                          <img src="https://manoarya.com/Manoarya%20All%20Post/Images/web_dev_explain.png" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Website Development</h2>
+                      <br>
+                      <p class="description">Our web development services are the cornerstone of our commitment to excellence. We specialize in crafting bespoke, high-performing websites and web applications that align with your unique goals and requirements. Our team of experienced developers uses the latest technologies and industry best practices. </p>
+                  </div>
+                  <div style="text-align: center; display: flex; flex-direction: column;">
+                    <h4 style="text-decoration: line-through;">From Ksh 20,000</h4>
+                    <h4>Ksh 15,000</h4>
+                    <form id="webdevForm">
+                      <input type="email" name="Email" id="webdevEmail" placeholder="Enter email to book this service" required><br>
+                      <input type="hidden" name="Service" id="webdevService" value="Website Development">
+                      <input type="hidden" name="_template" value="table">
+                      <button class="button webdevbtn" type="submit">Get Service</button>
+                    </form>
+                    <h4 class="webdevh3" style="color: rgb(2, 121, 2); display: none; padding-top: 1rem;">Request sent webtech will respond to you via E-mail provided!!!!</h4>
+                    <br>
+                    <i>Swipe left for more</i>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                          <img src="https://rygre.com/wp-content/uploads/website.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Website Adjustments</h2>
+                      <br>
+                      <p class="description">Our team of skilled developers and designers is here to provide ongoing support, ensuring that your website remains up-to-date, efficient, and aligned with your objectives. Whether you need minor tweaks, content updates, or more substantial changes, our Web Adjustments Service is your go-to solution.</p>
+                  </div>
+                  <div style="text-align: center; display: flex; flex-direction: column;">
+                    <h4 style="text-decoration: line-through;">From Ksh 10,000</h4>
+                    <h4>No fixed price</h4>
+
+                    <form id = "adForm">
+                      <input type="email" name="Email" id="adEmail" placeholder="Enter email to book this service" required><br>
+
+                      <input type="hidden" name="Service" id="adService" value="Website Adjustments">
+
+                      <input type="hidden" name="_template" value="table">
+
+                      <button class="button adbtn" type="submit">Get Service</button>
+                    </form>
+
+                    <h4 class="adh3" style="color: rgb(2, 121, 2); display: none;">Request sent webtech will respond to you via E-mail provided!!!!</h4>
+                    <br>
+                    <i>Swipe left for more</i>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                          <img src="https://images.unsplash.com/photo-1632239776255-0a7f24814df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Online Cyber services</h2>
+                      <br>
+                      <p class="description">Get cyber services from home</p>
+                      <p>Services:
+                        <ul>
+                          <li>Document Production <strong>@Ksh 300</strong></li>
+                          <li>Data Entry <strong>@Ksh 400</strong></li>
+                          <li>Professional CV's <strong>@Ksh 500</strong></li>
+                          <li>Professional Resumes <strong>@Ksh 600</strong></li>
+                          <li>Article Writing <strong>@Ksh 500</strong></li>
+                          <li>Cover Letters <strong>@Ksh 500</strong></li>
+                        </ul>
+                      </p>
+                  </div>
+                  <div style="text-align: center; display: flex; flex-direction: column;">
+                    <!-- <h4 style="text-decoration: line-through;">From Ksh 10,000</h4> -->
+                    <h4>Payment after work done</h4>
+                    <form class="serviceForm">
+                      <input type="email" name="Email" id="serviceEmail" placeholder="Enter email to book this service" required><br>
+
+                      <input type="hidden" name="Service" class="service2" value="Cyber services">
+
+                      <input type="hidden" name="_template" value="table">
+
+                      <button class="button servicebtn2" type="submit">Get Service</button>
+                      
+                    </form>
+                    <h4 class="h3" style="color: rgb(2, 121, 2); display: none;">Request sent webtech will respond to you via E-mail provided!!!!</h4>
+                    <br>
+                    <i>Swipe left for more</i>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+  </div>
+  </div>
+    <!-- slide -->
+   <!-- main -->
+   <section class="blog">
+    <div class="blog-wrapper">
+      <h2 style="padding: .5rem;"><span style="border-bottom: 5px solid darkorange;">Our Bl</span>og</h2>
+      <!-- main -->
+      <div>
+        <p>
+          <strong>Blog By Brian</strong> <br>
+          Welcome to the heart of Web Tech's knowledge hub - our blog. This is where we share our passion for web development, digital trends, and all things tech-related. Our blog is a place for you to delve deeper into the dynamic world of web technology, discover expert insights, and stay updated with the latest industry news.
+        </p>
+        <p>
+          Whether you're a seasoned web developer, an aspiring tech enthusiast, or a business owner looking to understand the digital landscape better, our blog is your resource for informative and engaging content. We cover a wide range of topics, from coding tips and design inspiration to SEO strategies and the future of web development.
+        </p>
+      </div>
+      <a href="">View Blog <i class="fa fa-arrow-right"></i></a>
+    </div>
+   </section>
+
+   <!-- portfolio -->
+   <section>
+    <!-- slide -->
+   <!-- <div class="slider-wrapper">
+    <div class="slide-container swiper">
+      <div class="services" id="services" style="width: 100%; padding-left: .5rem; background-color: #EFEFEF; padding-bottom: 1rem;">
+        <h2><span style="border-bottom: 5px solid darkorange;">Our Portf</span>olio</h2>
+      </div>
+      <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                          <img src="https://www.calaokenyasafaris.com/apple-touch-icon.png" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Calao Kenya Safaris</h2>
+                      <br>
+                      <p class="description">Calao kenya Safaris is a tour guide agency for kenya safaris adventure. It is more focused on giving it's services to the french speaking tourists who come to explore the Kenyan wildlife</p>
+                      <a href="" class="button">View Project</a>
+                      <i>swipe left for more</i>
+                  </div>
+                 
+              </div>
+
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                          <img src="https://www.shutterstock.com/image-photo/text-portfolio-on-brown-paper-260nw-387456811.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Connect Plus +</h2>
+                      <br>
+                      <p class="description">Connect Plus is a website owned by webtech. It's a free to use website where users can go and download stunning wallpapers for android devices and IOS. desktop and PC comming soon...</p>
+                      <a href="" class="button">View Project</a>
+                      <i>swipe left for more</i>
+                  </div>
+              </div>
+              
+              </div>
+          </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+  </div>
+  -->
+    <!-- slide -->
+   </section>
+   <!-- portfolio -->
 </body>
+ <!-- Swiper JS -->
+ <script src="/Responsive Card Slider/js/swiper-bundle.min.js"></script>
+
+ <!-- JavaScript -->
+ <script src="/Responsive Card Slider/js/script.js"></script>
 </html>
