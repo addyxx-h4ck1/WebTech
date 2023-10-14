@@ -70,4 +70,59 @@ adjustment.addEventListener('submit', (e) =>{
    })
 
 })
-//portfolioform//
+//portfolioform///////
+
+
+
+//////contactform////////
+const contactForm = document.querySelector('.input')
+contactForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
+
+    let fname = document.getElementById('fname');
+    let lname = document.getElementById('lname');
+    let email = document.getElementById('email');
+    let tel = document.getElementById('tel');
+    let subject = document.getElementById('subject');    
+    let message = document.getElementById('message');  
+    let send = document.getElementById('send');  
+
+
+    const contactData = {
+        FirstName: fname.value,
+        LastName: lname.value,
+        Email: email.value,
+        Tel: tel.value,
+        Subject: subject.value,
+        Message: message.value
+    } 
+
+    fetch("https://formsubmit.co/ajax/briannjosh23@gmail.com", {
+   method: "POST",
+   headers: { 
+       'Content-Type': 'application/json',
+       'Accept': 'application/json'
+   },
+   body: JSON.stringify(contactData)
+})
+    .then(res => {
+        const response = res.json();
+        console.log(response);
+    })
+   .then(action => {
+       email.value = ''
+       fname.value = ''
+       lname.value = ''
+       tel.value = ''
+       subject.value = ''
+       message.value = ''
+       send.value = 'Sent!!!'
+       send.style.color = 'green'
+       send.style.backgroundColor = 'black'
+       send.type = 'button'
+       console.log(send);
+   })
+
+})
+
+//////contactform////////
