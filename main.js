@@ -89,7 +89,7 @@ webdevForm.addEventListener('submit', (e) =>{
 
 //webdevform//
 
-const adjustmentForm = document.getElementById('adForm')
+const adjustmentForm = document.getElementById('adForm');
  adjustmentForm.addEventListener('submit', (e) =>{
     e.preventDefault();
     let adEmail = document.getElementById('adEmail')
@@ -120,8 +120,7 @@ const adjustmentForm = document.getElementById('adForm')
 
 //webdevform//
 
-const cyberForm = document.getElementById('cyberForm')
-
+const cyberForm = document.getElementById('cyber-form');
  cyberForm.addEventListener('submit', (e) =>{
     e.preventDefault();
     let cyberEmail = document.getElementById('cyberEmail')
@@ -146,37 +145,6 @@ const cyberForm = document.getElementById('cyberForm')
         cyberEmail.value = ''
         cyberbtn.style.display = 'none'
         cyberh3.style.display = 'block'
-    })
-})
-//portfolioform//
-//webdevform//
-
-const buyForm = document.getElementById('buyForm')
-
- buyForm.addEventListener('submit', (e) =>{
-    e.preventDefault();
-    let buyEmail = document.getElementById('buyEmail')
-    let buyService = document.getElementById('buy')
-    let buybtn = document.querySelector('.buybtn')
-    let buyh3 = document.querySelector('.buyh3')
-    const formData = {
-        Email: buyEmail.value,
-        Service: buyService.value
-    }
-    console.log(formData);
-
-    fetch("https://formsubmit.co/ajax/briannjosh23@gmail.com", {
-    method: "POST",
-    headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },
-    body: JSON.stringify(formData)
-})
-    .then(action => {
-        buyEmail.value = ''
-        buybtn.style.display = 'none'
-        buyh3.style.display = 'block'
     })
 })
 //portfolioform//

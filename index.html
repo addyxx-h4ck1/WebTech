@@ -19,6 +19,7 @@
     <!-- js -->
     <script defer src="/js/nav.js"></script>
     <script defer src="/main.js"></script>
+    <script defer src="/validat.js"></script>
     <!-- js -->
 </head>
 <body>
@@ -215,7 +216,7 @@
                   <div style="text-align: center; display: flex; flex-direction: column;">
                     <!-- <h4 style="text-decoration: line-through;">From Ksh 10,000</h4> -->
                     <h4>Payment after work done</h4>
-                    <form id="cyberForm">
+                    <form id="cyber-form">
                       <input type="email" name="Email" id="cyberEmail" placeholder="Enter email to book this service" required><br>
 
                       <input type="hidden" name="Service" id="cyberService" value="Cyber services">
@@ -335,17 +336,21 @@
                       <br>
                       <p class="description">This is our official website Webtech built by us for us. This website is available for sale contact us for more information.</p>
                       <h4>Current Price Ksh 30,000</h4>
-                      <form id="buyForm" style="text-align: center; display: flex; flex-direction: column;">
-                        <input type="email" name="Email" id="buyEmail" placeholder="Enter email for more info..." required>
-  
-                        <input type="hidden" name="Subject" id="buy" value="Buy webtech">
-  
-                        <input type="hidden" name="_template" value="table">
-  
-                        <button class="button buybtn" type="submit">Send</button>
-  
-                      </form>
-                      <h4 class="buyh3" style="color: rgb(2, 121, 2); display: none;">Request sent !!!!</h4>
+                      <div class="buy">
+                        <form id="form" style="text-align: center; display: flex; flex-direction: column;">
+                          <input type="email" name="Email" id="buyEmail" placeholder="Enter email for more info..." required>
+    
+                          <input type="hidden" name="Subject" id="buy" value="Buy webtech">
+    
+                          <input type="hidden" name="_template" value="table">
+    
+                          <button class="button buybtn" type="submit">Send</button>
+    
+                        </form>
+                        <br>
+                        <h4 class="buyh3" style="color: rgb(2, 121, 2); display: none; text-align: center;">Request sent !!!!</h4>
+                        
+                      </div>
                       
                   </div>
               </div>
