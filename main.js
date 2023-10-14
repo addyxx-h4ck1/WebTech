@@ -19,6 +19,10 @@ form.addEventListener('submit', (e) =>{
     },
     body: JSON.stringify(formData)
 })
+.then(res => {
+    const response = res.json();
+    console.log(response);
+})
     .then(action => {
         email.value = ''
         subscribebtn.value = 'Subscribed'
@@ -49,6 +53,10 @@ portfolioForm.addEventListener('submit', (e) =>{
     },
     body: JSON.stringify(formData)
 })
+.then(res => {
+    const response = res.json();
+    console.log(response);
+})
     .then(action => {
         portfolioEmail.value = ''
         portfoliobtn.style.display = 'none'
@@ -77,6 +85,10 @@ webdevForm.addEventListener('submit', (e) =>{
         'Accept': 'application/json'
     },
     body: JSON.stringify(formData)
+})  
+.then(res => {
+    const response = res.json();
+    console.log(response);
 })
     .then(action => {
         webbtn.style.display = 'none'
@@ -86,41 +98,6 @@ webdevForm.addEventListener('submit', (e) =>{
     })
 })
 //portfolioform//
-
-
-//webdevform//
-
-const adjustment = document.getElementById('ment');
- adjustment.addEventListener('submit', (e) =>{
-    e.preventDefault();
-
-    let email = document.getElementById('adEmail')
-    let service = document.getElementById('adService')
-    let btn = document.querySelector('.adbtn')
-    let h3 = document.querySelector('.adh3')
-
-    const formData = {
-        Email: email.value,
-        Service: service.value
-    }
-    console.log(formData);
-
-    fetch("https://formsubmit.co/ajax/briannjosh23@gmail.com", {
-    method: "POST",
-    headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },
-    body: JSON.stringify(formData)
-})
-    .then(action => {
-        email.value = ''
-        btn.style.display = 'none'
-        h3.style.display = 'block'
-    })
-})
-//portfolioform//
-
 //webdevform//
 
 const cyberForm = document.getElementById('cyber');
@@ -146,6 +123,10 @@ const cyberForm = document.getElementById('cyber');
         'Accept': 'application/json'
     },
     body: JSON.stringify(formData)
+})
+.then(res => {
+    const response = res.json();
+    console.log(response);
 })
     .then(action => {
         cyberEmail.value = ''
