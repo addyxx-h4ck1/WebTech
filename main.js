@@ -79,9 +79,10 @@ webdevForm.addEventListener('submit', (e) =>{
     body: JSON.stringify(formData)
 })
     .then(action => {
-        webEmail.value = ''
         webbtn.style.display = 'none'
         webh3.style.display = 'block'
+        webEmail.value = ''
+       
     })
 })
 //portfolioform//
@@ -89,16 +90,18 @@ webdevForm.addEventListener('submit', (e) =>{
 
 //webdevform//
 
-const adjustmentForm = document.getElementById('adForm');
- adjustmentForm.addEventListener('submit', (e) =>{
+const adjustment = document.getElementById('ment');
+ adjustment.addEventListener('submit', (e) =>{
     e.preventDefault();
-    let adEmail = document.getElementById('adEmail')
-    let adService = document.getElementById('adService')
-    let adbtn = document.querySelector('.adbtn')
-    let adh3 = document.querySelector('.adh3')
+
+    let email = document.getElementById('adEmail')
+    let service = document.getElementById('adService')
+    let btn = document.querySelector('.adbtn')
+    let h3 = document.querySelector('.adh3')
+
     const formData = {
-        Email: adEmail.value,
-        Service: adService.value
+        Email: email.value,
+        Service: service.value
     }
     console.log(formData);
 
@@ -111,22 +114,25 @@ const adjustmentForm = document.getElementById('adForm');
     body: JSON.stringify(formData)
 })
     .then(action => {
-        adEmail.value = ''
-        adbtn.style.display = 'none'
-        adh3.style.display = 'block'
+        email.value = ''
+        btn.style.display = 'none'
+        h3.style.display = 'block'
     })
 })
 //portfolioform//
 
 //webdevform//
 
-const cyberForm = document.getElementById('cyber-form');
+const cyberForm = document.getElementById('cyber');
  cyberForm.addEventListener('submit', (e) =>{
+
     e.preventDefault();
+
     let cyberEmail = document.getElementById('cyberEmail')
     let cyberService = document.getElementById('cyberService')
     let cyberbtn = document.querySelector('.cyberbtn')
     let cyberh3 = document.querySelector('.cyberh3')
+    
     const formData = {
         Email: cyberEmail.value,
         Service: cyberService.value

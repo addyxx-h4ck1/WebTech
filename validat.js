@@ -1,16 +1,17 @@
 
 //webdevform//
-const buyForm = document.getElementById('form');
-
- buyForm.addEventListener('submit', (e) =>{
+const buy = document.getElementById('form');
+ buy.addEventListener('submit', (e) =>{
     e.preventDefault();
-    let buyEmail = document.getElementById('buyEmail')
-    let buyService = document.getElementById('buy')
-    let buybtn = document.querySelector('.buybtn')
-    let buyh3 = document.querySelector('.buyh3')
+
+    let email = document.getElementById('buyEmail')
+    let service = document.getElementById('buy')
+    let btn = document.querySelector('.buybtn')
+    let h3 = document.querySelector('.buyh3')
+    
     const formData = {
-        Email: buyEmail.value,
-        Service: buyService.value
+        Email: email.value,
+        Service: service.value
     }
     console.log(formData);
 
@@ -23,9 +24,9 @@ const buyForm = document.getElementById('form');
     body: JSON.stringify(formData)
 })
     .then(action => {
-        buyEmail.value = ''
-        buybtn.style.display = 'none'
-        buyh3.style.display = 'block'
+        email.value = ''
+        btn.style.display = 'none'
+        h3.style.display = 'block'
     })
 })
 //portfolioform//
