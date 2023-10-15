@@ -2,6 +2,12 @@ var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
     loop: true,
+    autoplay : {
+      delay : 2000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction : false,
+      reverseDirection : false
+    },
      centerSlide: 'true',
     fade: 'true',
     grabCursor: 'true',
