@@ -201,6 +201,73 @@ div input{
   transition: .5s;
 }
 /* blog */
+/* subscribtions */
+/* subscribtions */
+.col-5{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col-5-wrapper{
+  max-width: 1500px;
+  display: flex;
+  width: 100%;
+  background-color: darkorange;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/*  */
+.card-plan{
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px black;
+}
+.card-plan ul{
+  list-style-type: none;
+}
+.fa-check{
+  color: royalblue;
+}
+.card-plan ul li{
+  padding: .5rem;
+}
+.card-plan input{
+  width: 150px;
+  padding: 10px 10px;
+}
+.main{
+  display: flex;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 2rem;
+  
+}
+@media screen and (max-width: 387px){
+  .card-plan{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 300px){
+  .card-plan{
+    width: 100%;
+  }
+}
+/*  */
+/* subscribtions */
+/* subscribtions */
+
+
+
+
+
+
 /* contact */
 .contact{
   display: flex;
