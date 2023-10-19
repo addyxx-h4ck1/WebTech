@@ -126,3 +126,14 @@ contactForm.addEventListener('submit', (e)=>{
 })
 
 //////contactform////////
+
+/////////////////////////////////////
+const Subform = document.querySelectorAll('.sub-form');
+Subform.forEach(form =>{
+    form.addEventListener('submit', (e) =>{
+        e.preventDefault();
+        const formObject = new FormData(form);
+        console.log(formObject);
+    })
+})
+/////////////////////////////////////

@@ -219,6 +219,7 @@ div input{
 }
 /*  */
 .card-plan{
+  width: 200px;
   background-color: rgb(253, 253, 253);
   display: flex;
   justify-content: space-around;
@@ -249,7 +250,7 @@ div input{
   padding-bottom: 2rem;
   
 }
-@media screen and (max-width: 387px){
+@media screen and (max-width: 432px){
   .card-plan{
     width: 300px;
   }
