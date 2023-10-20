@@ -23,23 +23,26 @@
    <header>
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Web Tech</a>
-        <div class="split">
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#services">Services</a>
+        <a href="#subs">Subscriptions</a>
+        <a href="#portfolio">Portfolio</a>
         <div class="dropdown">
-          <button class="dropbtn">Dropdown
+          <button class="dropbtn">Talk To us
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+            <a href="#"><i class="fa fa-whatsapp"></i> WhatsApp</a>
+            <a href="#"><i class="fa fa-envelope-o"></i> Email</a>
           </div>
         </div>
-        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-      </div>
+    
    </header>
    <section class="span">
         <div class="span-wrapper">
@@ -48,7 +51,7 @@
                 <p>Unlock the Power of the Web with Web Tech: Your Gateway to Innovative Web Development Solutions</p>
                 <!-- <p>Explore cutting-edge solutions, unleash your digital potential, and embark on a journey of web transformation with us."</p> -->
                 <br>
-                <a href="" class="button-span">Explore <i class="fa fa-arrow-right"></i></a>
+                <a href="#services" class="button-span">Explore <i class="fa fa-arrow-right"></i></a>
             </div>
             <!-- <img src="/images/webtechlogo.png" alt=""> -->
         </div>
@@ -56,9 +59,9 @@
    <!-- end of header -->
 
    <!-- main -->
-   <section class="about">
+   <section class="about" >
     <div class="about-wrapper">
-        <h2 style="padding-left: .5rem;"> <span style="border-bottom: 5px solid darkorange;">About</span> Us</h2>
+        <h2 style="padding-left: .5rem;" id="about"> <span style="border-bottom: 5px solid darkorange;">About</span> Us</h2>
         <div class="details">
           <div class="inffo">
             <p>Welcome to WebTech, your trusted partner for professional web development services. We specialize in creating custom websites that meet your unique needs and exceed your expectations.</p>
@@ -68,7 +71,7 @@
             <p>
               <form id="newsLetter">
                 <label for="email"><strong>subscribe for our news letter</strong></label><br>
-                <input type="email" name="E-mail" id="subscribe" placeholder="Provide your email">
+                <input type="email" name="E-mail" id="subscribe" placeholder="Provide your email" required>
 
                 <input type="hidden" name="Service" id="subscribeNews" value="Newsletter">
 
@@ -90,7 +93,7 @@
    <div class="slider-wrapper">
     <div class="slide-container swiper">
       <div class="services" id="services" style="width: 100%; padding-left: .5rem; background-color: #EFEFEF; padding-bottom: 1rem;">
-        <h2><span style="border-bottom: 5px solid darkorange;">Our Serv</span>ices</h2>
+        <h2 id="services"><span style="border-bottom: 5px solid darkorange;">Our Serv</span>ices</h2>
       </div>
       <div class="slide-content">
           <div class="card-wrapper swiper-wrapper">
@@ -238,7 +241,7 @@
    <!-- main -->
    <section class="blog">
     <div class="blog-wrapper">
-      <h2 style="padding: .5rem;"><span style="border-bottom: 5px solid darkorange;">Our Bl</span>og</h2>
+      <h2 style="padding: .5rem;" id="blog"><span style="border-bottom: 5px solid darkorange;">Our Bl</span>og</h2>
       <!-- main -->
       <div>
         <p>
@@ -257,7 +260,7 @@
     <!-- suscribtions -->
     <section class="col-5">
       <div class="col-5-wrapper">
-        <h2><span style="border-bottom: 5px solid royalblue; margin-left: .5rem;">Subscribt</span>ion Plans</h2>
+        <h2 id="subs"><span style="border-bottom: 5px solid royalblue; margin-left: .5rem;">Subscribt</span>ion Plans</h2>
         <br>
         <div class="main">
           <!--  -->
@@ -271,9 +274,9 @@
               </ul>
               <i style="text-align: center; font-weight: 900;">Ksh 3,500 / yr</i>
               <form class="sub-form" style="text-align: center;">
-                <input type="email" name="Email" placeholder="Enter Email" required>
-                <input type="hidden" value="Domain Hosting"><br>
-                <input type="submit" class="button" value="Get Service">
+                <input type="email" id="sub-id" name="Email" placeholder="Enter Email" required>
+                <input type="hidden" id="sub-subject" value="Domain Hosting"><br>
+                <input type="submit" id="sub-submit" class="button" value="Get Service">
               </form>
           </div>
           <!--  -->
@@ -288,9 +291,9 @@
               </ul>
               <i style="text-align: center; font-weight: 900;">Ksh 2,500 / month</i>
               <form class="sub-form" style="text-align: center;">
-                <input type="email" name="Email" placeholder="Enter Email" required>
-                <input type="hidden" value="Basic Plan"><br>
-                <input type="submit" class="button" value="Get Service">
+                <input type="email" id="sub-id" name="Email" placeholder="Enter Email" required>
+                <input type="hidden" id="sub-subject" value="Basic Plan"><br>
+                <input type="submit" id="sub-submit" class="button" value="Get Service">
               </form>
           </div>
           <!--  -->
@@ -305,9 +308,9 @@
               </ul>
               <i style="text-align: center; font-weight: 900;">Ksh 7,000 / month</i>
               <form class="sub-form" style="text-align: center;">
-                <input type="email" name="Email" placeholder="Enter Email" required>
-                <input type="hidden" value="Premium Plan"><br>
-                <input type="submit" class="button" value="Get Service">
+                <input type="email" id="sub-id" name="Email" placeholder="Enter Email" required>
+                <input type="hidden" id="sub-subject" value="Premium Plan"><br>
+                <input type="submit" id="sub-submit" class="button" value="Get Service">
               </form>
           </div>
           <!--  -->
@@ -322,9 +325,9 @@
               </ul>
               <i style="text-align: center; font-weight: 900;">Ksh 5,000 / month</i>
               <form class="sub-form" style="text-align: center;">
-                <input type="email" name="Email" placeholder="Enter Email" required>
-                <input type="hidden" value="Cyber Services Subscription"><br>
-                <input type="submit" class="button" value="Get Service">
+                <input type="email" id="sub-id" name="Email" placeholder="Enter Email" required>
+                <input type="hidden" id="sub-subject" value="Cyber Services Subscription"><br>
+                <input type="submit" id="sub-submit" class="button" value="Get Service">
               </form>
           </div>
           <!--  -->
@@ -340,7 +343,7 @@
     <div class="slider-wrapper">
     <div class="slide-container swiper">
       <div class="services" id="services" style="width: 100%; padding-left: .5rem; background-color: #EFEFEF; padding-bottom: 1rem;">
-        <h2><span style="border-bottom: 5px solid darkorange;">Our Portf</span>olio</h2>
+        <h2 id="portfolio"><span style="border-bottom: 5px solid darkorange;">Our Portf</span>olio</h2>
       </div>
       <div class="slide-content">
           <div class="card-wrapper swiper-wrapper">
@@ -449,7 +452,7 @@
     <div class="contact-overlay">
     <div class="contact-wrapper">
       <div class="services" id="services" style="width: 100%; padding: .5rem; padding-bottom: 1rem; color: royalblue;">
-        <h2><span style="border-bottom: 5px solid darkorange;">Talk T</span>o Us</h2>
+        <h2 id="contact"><span style="border-bottom: 5px solid darkorange;">Talk T</span>o Us</h2>
       </div>
 
       <!-- main -->
@@ -474,18 +477,62 @@
                    <input type="submit" id="send" class="button" value="Send">
               </form>
             </div>
-            <!--  -->
-            <!-- <div class="address">
-              <p><i class="fa fa-phone"></i> Call: 0769923638</p>
-              <p><i class="fa fa-envelope"></i> Email: webtech.bn@gmail.com</p>
-              <p><i class="fa fa-whatsapp"></i> <a href="">Whatsapp</a></p>
-              <br>
-              <p>Mombasa, Kenya</p>
-            </div> -->
         </div>
     </div>
     </div>
    </section>
+   <footer>
+    <div class="footer-wrapper">
+      <h3 style="text-align: center; color: darkorange;">Web Tech</h3>
+      <div class="footer-contents">
+        <div>
+          <h4>Services:</h4>
+          <p>Web Development</p>
+          <p>Cyber Services</p>
+          <br>
+          <h4>Contact:</h4>
+          <p>Email: webtech.bn@gmail.com</p>
+          <p>Call: 0768299380 / 0769928638</p>
+          <br>
+          <div class="footer-links">
+            <h4>Talk To Us</h4>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-whatsapp"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>News Letter</h4>
+          <form id="newsLetter">
+            <input type="email" name="E-mail" id="subscribe" placeholder="Provide your email" required>
+
+            <input type="hidden" name="Service" id="subscribeNews" value="Newsletter">
+
+            <input type="hidden" name="_template" id="template" value="table">
+            <br>
+            <input type="submit" id="subscribebtn" class="button" value="Subscribe" style="background-color: #111;">
+          </form>
+        </div>
+        <div>
+          <h4>Cyber Services:</h4>
+          <p>Document Production</p>
+          <p>Resume's and cv's</p>
+          <p>Cover letters</p>
+          <i>Payment after work done</i>
+          <br>
+          <br>
+        </div>
+        <div>
+          <h4>Payment Methods</h4>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwK2E0WIFVQq_C22BdG77fCindj-bw4IksHmU_SV-J3F5RRXyfiXmA9_BdmDT0wppsJ9M&usqp=CAU" alt="" width="50px">
+          <img src="https://static-00.iconduck.com/assets.00/paypal-icon-2048x1286-ha8kzb8k.png" alt="" width="50px">
+        </div>
+        
+      </div>
+    </div>
+   </footer>
 </body>
  <!-- Swiper JS -->
  <script src="/Responsive Card Slider/js/swiper-bundle.min.js"></script>

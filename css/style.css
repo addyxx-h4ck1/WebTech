@@ -26,7 +26,7 @@ header{
   flex-direction: column;
   max-width: 1500px;
   width: 100%;
-  background-color: #111111;
+  background-color: #000000;
   color: rgb(255, 255, 255);
 }
 .span-wrapper{
@@ -34,7 +34,7 @@ header{
   align-items: center;
   justify-content: space-around;
   height: 400px;
-  background-color: rgba(0, 0, 0, 0.753);
+  background-color: rgba(0, 0, 0, 0.76);
 }
 
 .span img{
@@ -49,7 +49,7 @@ header{
   font-size: 50px;
 }
 .span-content p{
-  font-size: 25px;
+  font-size: 20px;
 }
 .button-span{
   padding: 15px 15px;
@@ -72,7 +72,7 @@ header{
     font-size: 30px;
   }
   .span-content p{
-    font-size: 18Spx;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 500px){
@@ -80,7 +80,7 @@ header{
     font-size: 30px;
   }
   .span-content p{
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -279,7 +279,7 @@ div input{
 .contact-overlay{
   max-width: 1500px;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  background-image: url(https://media.istockphoto.com/id/871030872/photo/programming-code-abstract-technology-background-of-software-developer.webp?b=1&s=170667a&w=0&k=20&c=-4_fKSaeTwGLirw2EmAx-M8Ng9TpVyj2luQl5bK6eDI=);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -350,3 +350,56 @@ div input{
   }
 }
 /* contact */
+
+/* footer */
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer h4{
+  color:#111111
+}
+footer input{
+  padding: 10px;
+}
+.footer-wrapper{
+  max-width: 1500px;
+  width: 100%;
+  background-color: rgb(56, 56, 56);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+.footer-contents{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  row-gap: 1rem;
+  column-gap: .5rem;
+ 
+}
+.footer-links a{
+  font-size: 30px;
+  color: green;
+
+}
+.footer-links a:hover{
+  font-size: 30px;
+  color: darkorange;
+ }
+ @media screen and (max-width: 380px){
+  .footer-contents{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    row-gap: 1rem;
+    column-gap: .5rem;
+    margin-left: .5rem;
+   
+  }
+ }
+/* footer */

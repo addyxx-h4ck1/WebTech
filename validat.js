@@ -132,8 +132,31 @@ const Subform = document.querySelectorAll('.sub-form');
 Subform.forEach(form =>{
     form.addEventListener('submit', (e) =>{
         e.preventDefault();
-        const formObject = new FormData(form);
-        console.log(formObject);
-    })
+        let subEmail = form.querySelector('#sub-id')
+       
+        let service = form.querySelector('#sub-subject')
+        const submit = form.querySelector('#sub-submit')
+
+        const data = {
+            Email: subEmail.value,
+            Service: service.value,
+        }
+    fetch("https://formsubmit.co/ajax/briannjosh23@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+     }).then(res => {
+        submit.value = 'Sent!!!!'
+        submit.style.color = 'green'
+        submit.style.backgroundColor = 'black'
+        submit.type = 'button'
+     }).then(clear =>{
+        subEmail.value = '';
+     })
+       
+})
 })
 /////////////////////////////////////
