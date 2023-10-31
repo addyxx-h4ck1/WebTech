@@ -160,3 +160,36 @@ Subform.forEach(form =>{
 })
 })
 /////////////////////////////////////
+
+////////////////////////////////
+const newsForm = document.querySelector('.footerForm')
+newsForm.addEventListener('submit', (e) =>{
+    e.preventDefault();
+    let email = document.getElementById('footernews')
+    let service = document.getElementById('newsfooter')
+    let submit = document.getElementById('footerbtn')
+
+    const data = {
+        Email : email.value,
+        Service : service.value
+    }
+         fetch("https://formsubmit.co/ajax/briannjosh23@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+     }).then(res =>{
+        submit.type = 'button'
+        submit.value = 'Subscribed!!'
+        submit.style.color = 'green'
+        submit.style.backgroundColor = 'black'
+     }).then(action =>{
+        email.value = '';
+     })
+    
+   
+   
+})
+////////////////////////////////
