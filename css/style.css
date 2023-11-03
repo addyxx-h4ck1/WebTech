@@ -18,7 +18,7 @@ header{
   width: 100%;
 }
 .span{
-  background-image: url('/images/Picsart_23-10-13_10-18-23-226.png');
+ background-color: royalblue;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,15 +26,16 @@ header{
   flex-direction: column;
   max-width: 1500px;
   width: 100%;
-  background-color: #000000;
+  height: 100vh;
   color: rgb(255, 255, 255);
 }
 .span-wrapper{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 400px;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.76);
+
 }
 
 .span img{
