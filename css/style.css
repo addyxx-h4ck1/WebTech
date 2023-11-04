@@ -18,7 +18,7 @@ header{
   width: 100%;
 }
 .span{
- background-color: royalblue;
+  background-image: url(https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,69 +26,58 @@ header{
   flex-direction: column;
   max-width: 1500px;
   width: 100%;
-  height: 100vh;
+  height: 400px;
   color: rgb(255, 255, 255);
 }
 .span-wrapper{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.76);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
 
 }
-
-.span img{
-  width: 700px;
-}
-.span-content{
-  text-align: center;
-  width: 700px;
-  margin-left: .5rem;
-}
-.span-content h1{
+.span-wrapper h1{
   font-size: 50px;
-}
-.span-content p{
-  font-size: 20px;
-}
-.button-span{
-  padding: 15px 15px;
-  margin-top: 2rem;
-  background-color: darkorange;
-  border-radius: 10px;
-  color: #111111;
-  text-decoration: none;
-  margin-left: .5rem;
-}
-.button-span:hover{
-  padding: 15px 15px;
-  background-color: #795a5a;
-}
-@media screen and (max-width: 400px){
-  .span-wrapper{
-    height: 300px;
-  }
-  .span-content h1{
-    font-size: 30px;
-  }
-  .span-content p{
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 500px){
-  .span-content h1{
-    font-size: 30px;
-  }
-  .span-content p{
-    font-size: 15px;
-  }
+  text-align: center;
 }
 
 /* end of header */
 
 /* banner */
-
+.pics-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+.pics-section-wrapper{
+  max-width: 1500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: self-start;
+  align-items: center;
+  height: fit-content;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+.pics-section-wrapper img{
+  margin-bottom: 1rem;
+  width: 300px;
+  height: 400px;
+  object-fit: fill;
+  box-shadow: 0 0 10px 3px;
+}
+@media screen and (max-width: 620px){
+  .pics-section-wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .pics-section-wrapper img{
+    width: 300px;
+  }
+}
 /* banner */
 /* about */
 .about{
